@@ -15,8 +15,8 @@ let menuContainer = document.getElementById("menu-container");
 let menu = document.getElementById("menu");
 let closeMenu = document.getElementById("close-menu");
 
-let srcArrowUp = "/images/icon-arrow-up.svg";
-let srcArrowDown = "/images/icon-arrow-down.svg";
+let srcArrowUp = "images/icon-arrow-up.svg";
+let srcArrowDown = "images/icon-arrow-down.svg";
 
 
 function showFeatures() {
