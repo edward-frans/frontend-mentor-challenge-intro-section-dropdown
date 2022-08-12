@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="/normalize.css">
+  <link rel="stylesheet" href="/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <nav id="nav-dsk">
+    <div class="logo">
+      <img src="/images/logo.svg" alt="logo">
+    </div>
+    <div class="navbar-item" onclick="showFeatures()">
+      <p>Features</p>
+      <img class="arrow" id="arrow-features" src="/images/icon-arrow-down.svg" alt="arrow-down">
+      <div class="dropdown features" id="features" style="display: none;">
+        <div class="features-container">
+          <div class="features-item">
+            <div class="fc-logo">
+              <img src="/images/icon-todo.svg" alt="todolist">
+            </div>
+            <p class="fi-name">Todo List</p>
+          </div>
+          <div class="features-item">
+            <div class="fc-logo">
+              <img src="/images/icon-calendar.svg" alt="calendar">
+            </div>
+            <p class="fi-name">Calendar</p>
+          </div>
+          <div class="features-item">
+            <div class="fc-logo">
+              <img src="/images/icon-reminders.svg" alt="reminders">
+            </div>
+            <p class="fi-name">Reminders</p>
+          </div>
+          <div class="features-item">
+            <div class="fc-logo">
+              <img src="/images/icon-planning.svg" alt="planning">
+            </div>
+            <p class="fi-name">Planning</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar-item" onclick="showCompany()">
+      <p>Company</p>
+      <img class="arrow" id="arrow-company" src="/images/icon-arrow-down.svg" alt="arrow-down">
+      <div class="dropdown company" id="company" style="display: none;">
+        <div class="company-container">
+          <div class="company-item">
+            <p class="ci-name">History</p>
+          </div>
+          <div class="company-item">
+            <p class="ci-name">Our Team</p>
+          </div>
+          <div class="company-item">
+            <p class="ci-name">Blog</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar-item">
+      <p>Careers</p>
+    </div>
+    <div class="navbar-item">
+      <p>About</p>
+    </div>
+    <div>
+      <!-- Nothing -->
+    </div>
+    <button class="btn-nav login">Login</button>
+    <button class="btn-nav register">Register</button>
+  </nav>
+
+  <div id="main-container" class="main-container">
+    <div class="main-content">
+      <div class="content-text">
+        <h1>Make <br> remote work</h1>
+        <p>Get your team in sync, no matter your location. <br>
+          Streamline processes, create team rituals, and <br>
+          watch productivity soar.</p>
+        <button>Learn More</button>
+      </div>
+      <div class="content-sponsors">
+        <div>
+          <img src="/images/client-databiz.svg" alt="databiz">
+        </div>
+        <div>
+          <img src="/images/client-audiophile.svg" alt="audiophile">
+        </div>
+        <div>
+          <img src="/images/client-meet.svg" alt="meet">
+        </div>
+        <div>
+          <img src="/images/client-maker.svg" alt="maker">
+        </div>
+      </div>
+    </div>
+    <div class="main-img">
+      <img src="/images/image-hero-desktop.png" alt="ahero">
+    </div>
+  </div>
+
+  <!-- ! Mobile -->
+  <nav id="nav-mob">
+    <div class="logo">
+      <img src="/images/logo.svg" alt="logo">
+    </div>
+    <div>
+      <!-- Nothing -->
+    </div>
+    <div id="menu" class="menu">
+      <img src="/images/icon-menu.svg" alt="menu-logo">
+    </div>
+  </nav>
+
+  <div class="main-container-mob">
+    <div class="main-img">
+      <img src="/images/image-hero-mobile.png" alt="hero">
+    </div>
+    <div class="main-content">
+      <h1>Make remote work</h1>
+      <p>Get your team in sync, no matter your <br>
+        location. Streamline processes, create <br>
+        team rituals, and watch productivity soar.</p>
+        <div class="content-button">
+          <button>Learn More</button>
+        </div>
+    </div>
+    <div class="content-sponsors">
+      <div id="databiz">
+        <img src="/images/client-databiz.svg" alt="databiz">
+      </div>
+      <div id="audiophile">
+        <img src="/images/client-audiophile.svg" alt="audiophile">
+      </div>
+      <div id="meet">
+        <img src="/images/client-meet.svg" alt="meet">
+      </div>
+      <div id="maker">
+        <img src="/images/client-maker.svg" alt="maker">
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-container" id="menu-container">
+    <div class="close-container">
+      <img id="close-menu" src="/images/icon-close-menu.svg" alt="close-menu"">
+    </div>
+    <div class=" navbar-item" onclick="showFeatures()">
+      <p>Features</p>
+      <img class="arrow" id="arrow-features-mob" src="/images/icon-arrow-down.svg" alt="arrow-down">
+    </div>
+    <div class="features-container" id="features-mob" style="display: none;">
+      <div class="features-item">
+        <div class="fc-logo">
+          <img src="/images/icon-todo.svg" alt="todolist">
+        </div>
+        <p class="fi-name">Todo List</p>
+      </div>
+      <div class="features-item">
+        <div class="fc-logo">
+          <img src="/images/icon-calendar.svg" alt="calendar">
+        </div>
+        <p class="fi-name">Calendar</p>
+      </div>
+      <div class="features-item">
+        <div class="fc-logo">
+          <img src="/images/icon-reminders.svg" alt="reminders">
+        </div>
+        <p class="fi-name">Reminders</p>
+      </div>
+      <div class="features-item">
+        <div class="fc-logo">
+          <img src="/images/icon-planning.svg" alt="planning">
+        </div>
+        <p class="fi-name">Planning</p>
+      </div>
+    </div>
+    <div class="navbar-item" onclick="showCompany()">
+      <p>Company</p>
+      <img class="arrow" id="arrow-company-mob" src="/images/icon-arrow-down.svg" alt="arrow-down">
+    </div>
+    <div class="company-container" id="company-mob" style="display: none;">
+      <div class="company-item">
+        <p class="ci-name">History</p>
+      </div>
+      <div class="company-item">
+        <p class="ci-name">Our Team</p>
+      </div>
+      <div class="company-item">
+        <p class="ci-name">Blog</p>
+      </div>
+    </div>
+    <div class="navbar-item">
+      <p>Careers</p>
+    </div>
+    <div class="navbar-item">
+      <p>About</p>
+    </div>
+    <div>
+      <!-- Nothing -->
+    </div>
+    <div class="button-container">
+      <button class="btn-nav login-mob">Login</button>
+      <button class="btn-nav register-mob">Register</button>
+    </div>
+  </div>
+
+  <script src="/index.js"></script>
+</body>
+
+</html>

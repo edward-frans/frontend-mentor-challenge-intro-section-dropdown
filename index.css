@@ -1,0 +1,560 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Epilogue", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  height: 100vh;
+}
+
+#nav-dsk {
+  background-color: #ffffff;
+  height: 80px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr) 6fr repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width: 100%;
+}
+
+/* * Logo */
+
+.logo {
+  display: flex;
+  width: auto;
+  margin: 0px 50px 0 50px;
+  align-items: center;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+/* * NavBar Items */
+
+.navbar-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 500;
+  color: #686868;
+  font-size: 16px;
+  margin-right: 40px;
+}
+
+p:hover {
+  color: #000000;
+}
+
+.arrow {
+  margin-left: 6px;
+}
+
+.arrow-down {
+  margin: 0px 4px 0px 0px;
+  padding: 0px;
+}
+
+/* * Buttons */
+
+.btn-nav {
+  background-color: white;
+  color: #686868;
+  font-weight: 500;
+  width: 130px;
+  height: 54px;
+  justify-content: center;
+  border: 2px solid #686868;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.btn-nav:hover {
+  color: #000000;
+}
+
+.login {
+  margin: auto;
+  border: 2px solid #ffffff;
+}
+
+.register {
+  margin: auto;
+  margin-right: 50px;
+}
+
+/* * Dropdown */
+.dropdown {
+  background-color: #ffffff;
+  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.1))
+    drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.1));
+  border-radius: 12px;
+  top: 60px;
+}
+
+/* * Features */
+.features {
+  position: absolute;
+  width: 156px;
+  height: 160px;
+}
+
+.features-container {
+  width: 124px;
+  height: 128px;
+  margin: 16px;
+}
+
+.features-item {
+  display: flex;
+  width: 124px;
+  height: 32px;
+}
+
+/* * features container logo */
+.fc-logo {
+  width: 30px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* * features item name */
+.fi-name {
+  width: 94px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+}
+
+/* * Company */
+.company {
+  position: absolute;
+  width: 112px;
+  height: 134px;
+}
+
+.company-container {
+  width: 80px;
+  height: 102px;
+  margin: 16px;
+}
+
+.company-item {
+  display: flex;
+  width: 80px;
+  height: 34px;
+}
+
+/* * Company item name */
+.ci-name {
+  display: flex;
+  align-items: center;
+  padding-left: 3px;
+  line-height: 26px;
+  padding: 4px 0px 4px 3px;
+}
+
+/* * NavMob no visible*/
+#nav-mob,
+.main-container-mob,
+.menu-container {
+  display: none;
+}
+
+/* * Main Content */
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width: 1184px;
+  height: 736px;
+  margin: auto;
+  margin-top: 54px;
+}
+
+.main-content {
+  height: 736px;
+  margin-right: 0;
+}
+
+.main-img {
+  display: flex;
+}
+
+.content-text {
+  height: 566px;
+}
+
+.content-text h1 {
+  font-size: 80px;
+  font-weight: 700;
+  margin: 90px 0 50px 0;
+}
+
+.content-text p {
+  color: #686868;
+  height: 84px;
+  line-height: 26px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.content-text p:hover {
+  color: #686868
+}
+
+.content-text button {
+  width: 156px;
+  height: 58px;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 14px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.content-text button:hover {
+  cursor: pointer;
+}
+
+.content-sponsors {
+  display: flex;
+  height: 64px;
+}
+
+.content-sponsors div {
+  display: flex;
+  align-items: center;
+  margin-right: 33px;
+}
+
+.main-img img {
+  width: 520px;
+  height: 694px;
+  margin-left: auto;
+}
+
+/* * Media Screen */
+@media screen and (max-width: 1290px) {
+  .main-container {
+    width: 1084px;
+  }
+
+  .content-text h1 {
+    font-size: 70px;
+  }
+
+  .content-text p {
+    font-size: 16px;
+  }
+
+  .content-text button {
+    font-size: 16px;
+    width: 136px;
+  }
+}
+
+@media screen and (max-width: 1182px) {
+  .main-container {
+    width: 964px;
+  }
+
+  .main-content {
+    height: 676px;
+  }
+
+  .content-text {
+    height: 506px;
+  }
+
+  .main-img img {
+    width: 480px;
+    height: 640px;
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #nav-dsk,
+  #main-container {
+    display: none;
+  }
+
+  #nav-mob {
+    background-color: #ffffff;
+    height: 68px;
+    display: grid;
+    grid-template-columns: 1fr 4fr 0.4fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .logo {
+    display: flex;
+    width: auto;
+    margin: 0px 50px 0 50px;
+    align-items: center;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    margin: 0 50px 0 0;
+  }
+
+  .menu:hover {
+    cursor: pointer;
+  }
+
+  .menu-container {
+    display: initial;
+    background-color: #ffffff;
+    width: calc(100% - 36%);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -200%;
+  }
+
+  .show-container {
+    right: 0%;
+  }
+
+  .close-container {
+    height: 68px;
+    display: flex;
+    align-items: center;
+  }
+
+  .close-container img {
+    margin: auto;
+    margin-right: 50px;
+  }
+
+  .close-container img:hover {
+    cursor: pointer;
+  }
+
+  .navbar-item {
+    height: 42px;
+    justify-content: unset;
+    margin: 0 0 0 50px;
+  }
+
+  /* * Buttons */
+  .button-container {
+    width: 100%;
+    height: 108px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 100px;
+  }
+
+  .btn-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 42px;
+  }
+
+  .login-mob {
+    margin: auto;
+    border: 2px solid #ffffff;
+  }
+
+  .register-mob {
+    margin: auto;
+  }
+
+  /* * Features and Company items */
+  .features-container {
+    display: inherit;
+    height: 168px;
+    margin: 6px 0px 6px 78px;
+  }
+
+  /* ? Tanto el features-item como el company-item obtienen su display:flex de arriba */
+  .features-item {
+    height: 42px;
+    align-items: center;
+    color: #686868;
+    font-weight: 500;
+  }
+
+  .features-item:hover {
+    cursor: pointer;
+  }
+
+  .company-container {
+    display: inherit;
+    height: 126px;
+    margin: 6px 0px 6px 78px;
+  }
+
+  .company-item {
+    height: 42px;
+    align-items: center;
+    color: #686868;
+    font-weight: 500;
+    padding: unset;
+  }
+
+  .company-item:hover {
+    cursor: pointer;
+  }
+
+  /* * Main Content Mobile */
+  .main-container-mob {
+    display: initial;
+  }
+  .main-container-mob {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .main-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+  }
+
+  .main-img img {
+    width: 600px;
+    height: 451px;
+    margin-left: unset;
+  }
+
+  .main-content {
+    height: 220px;
+  }
+
+  h1 {
+    display: flex;
+    margin: 48px 0 21px 0;
+    font-size: 36px;
+    justify-content: center;
+  }
+
+  p {
+    color: #686868;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  button {
+    width: 140px;
+    height: 50px;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 14px;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 22px 0 54px 0;
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
+
+  .content-button {
+    display: flex;
+    justify-content: center;
+  }
+
+  .content-sponsors {
+    justify-content: space-around;
+    margin-bottom: auto;
+  }
+
+  .content-sponsors div {
+    margin: unset;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    margin: 0 30px 0 30px;
+  }
+
+  .menu {
+    margin: 0 30px 0 0;
+  }
+
+  .close-container img {
+    margin-right: 30px;
+  }
+
+  .navbar-item {
+    margin: 0 0 0 30px;
+  }
+
+  .features-container,
+  .company-container {
+    margin: 6px 0px 6px 44px;
+  }
+
+  .main-img img {
+    width: 375px;
+    height: 282px;
+    margin-left: unset;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .logo {
+    margin: 0 16px 0 16px;
+  }
+
+  .menu {
+    margin: 0 16px 0 0;
+  }
+
+  .close-container img {
+    margin-right: 16px;
+  }
+
+  .navbar-item {
+    margin: 0 0 0 24px;
+  }
+
+  .features-container,
+  .company-container {
+    margin: 6px 0px 6px 38px;
+  }
+
+  .btn-nav {
+    width: 200px;
+  }
+
+  #databiz img {
+    width: 80px;
+  }
+
+  #audiophile img {
+    width: 54px;
+  }
+
+  #meet img {
+    width: 66px;
+  }
+
+  #maker img {
+    width: 60px;
+  }
+}
