@@ -103,6 +103,7 @@ p:hover {
   position: absolute;
   width: 156px;
   height: 160px;
+  opacity: 0.1;
 }
 
 .features-container {
@@ -513,6 +514,10 @@ p:hover {
     width: 375px;
     height: 282px;
     margin-left: unset;
+  }
+
+  .btn-nav {
+    width: 230px;
   }
 }
 
