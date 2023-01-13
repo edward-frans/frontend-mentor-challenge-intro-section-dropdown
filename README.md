@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com) <!-- Github -->
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com) <!-- Github Pages -->
+- Solution URL: [Here](https://github.com/edward-frans/frontend-mentor-challenge-intro-section-dropdown) <!-- Github -->
+- Live Site URL: [Here](https://edward-frans.github.io/frontend-mentor-challenge-intro-section-dropdown/) <!-- Github Pages -->
  
 ## My process
 
