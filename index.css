@@ -103,18 +103,17 @@ p:hover {
   position: absolute;
   width: 156px;
   height: 160px;
-  opacity: 0.1;
 }
 
 .features-container {
-  width: 124px;
+  width: 154px;
   height: 128px;
   margin: 16px;
 }
 
 .features-item {
   display: flex;
-  width: 124px;
+  width: 154px;
   height: 32px;
 }
 
@@ -129,11 +128,12 @@ p:hover {
 
 /* * features item name */
 .fi-name {
-  width: 94px;
+  width: 154px;
   height: 32px;
   display: flex;
   align-items: center;
   padding-left: 8px;
+  justify-content: left;
 }
 
 /* * Company */
@@ -213,7 +213,7 @@ p:hover {
 }
 
 .content-text p:hover {
-  color: #686868
+  color: #686868;
 }
 
 .content-text button {
@@ -328,10 +328,35 @@ p:hover {
     position: fixed;
     top: 0;
     right: -200%;
+    transition: right 0.9s cubic-bezier(0.77, 0, 0.175, 1);
   }
+
+  /* * Overlay */
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+  }
+
+  .menu-container.show-container {
+    z-index: 999;
+  }
+
+  /* Cuando el menú está abierto, muestra el overlay */
+  .menu-container.show-container ~ .overlay,
+  .overlay.active {
+    display: block;
+  }
+  /* * Ends overlay */
 
   .show-container {
     right: 0%;
+    animation: slide-in 0.9s ease forwards;
   }
 
   .close-container {
@@ -425,6 +450,7 @@ p:hover {
   .main-container-mob {
     width: 100vw;
     height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   .main-img {

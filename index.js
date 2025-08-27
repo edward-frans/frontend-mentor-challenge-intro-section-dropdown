@@ -63,11 +63,13 @@ function showCompany() {
 if (menu) {
   menu.addEventListener("click", () => {
     menuContainer.classList.add("show-container");
+    document.querySelector('.overlay').classList.add('active');
   })
 }
 
 if (closeMenu) {
   closeMenu.addEventListener("click", () => {
     menuContainer.classList.remove("show-container");
+    document.querySelector('.overlay').classList.remove('active');
   })
 }
