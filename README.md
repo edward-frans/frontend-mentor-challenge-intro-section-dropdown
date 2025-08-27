@@ -51,10 +51,10 @@ During the development process of this project, I learned many things:
 
 1. Reviewing the page of Discord, i realized that they have 2 containers, one for desktop and the other for mobile. Then, when i have a mobile, i view that the page change to the other div,  kwoning this, i have a more amplied vision of what i have to do for this project. So i did the same, i did 2 divs, one for desktop and one for mobile. 
 Discover this make me save a lot of time, beacuse i spended 2 or 3 weeks researching how to do this. 
-I know that is so dumb of me, because i could simply asking for someone help, but, i dont know, asking something like this, it feels kind of embarrasing, and most of the people maybe will say things like "you have to study this before" or "you dont know THIS?! 
+I know that is so dumb of me, because i could simply asking for someone help, but, i dont know, asking something like this, it feels kind of embarrasing, and most of the people maybe will say things like "you have to study this before" or "you dont know THIS?!". 
 
 1. While i did the dropdown, i realized that, it will be more easy if i have a guide, like a wireframe, so i remerbered that in the past i used figma for things like that.
-So before wasting time trying to do the dropdwon with no idea of how. I did the wireframe, or at least a guide to know how to do not only the dropdown, but all the page. Including the mobile view. 
+So before wasting time trying to do the dropdown with no idea of how. I did the wireframe, or at least a guide to know how to do not only the dropdown, but all the page. Including the mobile view. 
 But i forgot one of the most important things, the "mobile first". And i payed the cost of that error.
 Fotunately, i was able to fix it in time.
 
