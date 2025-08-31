@@ -68,7 +68,7 @@ p:hover {
   color: #686868;
   font-weight: 500;
   width: 130px;
-  height: 54px;
+  height: 48px;
   justify-content: center;
   border: 2px solid #686868;
   border-radius: 16px;
@@ -218,12 +218,13 @@ p:hover {
 
 .content-text button {
   width: 156px;
-  height: 58px;
+  height: 54px;
   background-color: #000000;
   color: #ffffff;
   border-radius: 14px;
   font-weight: 700;
   font-size: 18px;
+  border: 0px;
 }
 
 .content-text button:hover {
@@ -374,6 +375,11 @@ p:hover {
     cursor: pointer;
   }
 
+  .main-content p{
+    height: 70px;
+    line-height: 24px;
+  }
+
   .navbar-item {
     height: 42px;
     justify-content: unset;
@@ -466,7 +472,7 @@ p:hover {
   }
 
   .main-content {
-    height: 220px;
+    height: 240px;
   }
 
   h1 {
@@ -492,7 +498,8 @@ p:hover {
     border-radius: 14px;
     font-weight: 700;
     font-size: 16px;
-    margin: 22px 0 54px 0;
+    margin: 22px 0 40px 0;
+    border: 0px;
   }
 
   button:hover {
